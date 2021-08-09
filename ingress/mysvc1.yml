@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: mywebsiteone-svc
+ labels:
+    app: mywebsiteone
+    
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    nodePort: 30001
+    protocol: TCP
+  selector:
+     app:  mywebsiteone
+    
+
+
+# -p 30001:8080

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myweb1-rc
+spec:
+  replicas: 3
+  selector:
+    app: mywebsiteone
+   
+  template:
+   metadata:
+    labels:
+     app: mywebsiteone
+    spec:
+    containers:
+    - name: mywebsiteone-container
+      image: maha4iac/mahaonlinestore:1
+      ports:
+      - containerPort: 8080
