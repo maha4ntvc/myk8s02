@@ -11,9 +11,9 @@ spec:
    metadata:
     labels:
      app: mywebsiteone
-    spec:
-     containers:
-     - name: mywebsiteone-container
-       image: maha4iac/mahaonlinestore:1
-       ports:
-       - containerPort: 8080
+   spec:
+    containers:
+    - name: mywebsiteone-container
+      image: maha4iac/mahaonlinestore:1
+      ports:
+      - containerPort: 8080
