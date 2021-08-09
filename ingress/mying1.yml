@@ -8,10 +8,19 @@ spec:
   rules:
   - http:
       paths:
-      - path: /testpath
+      - path: /websiteone
         pathType: Prefix
         backend:
           service:
             name: mywebsiteone-svc
             port:
               number: 8080
+
+      - path: /websitetwo
+        pathType: Prefix
+        backend:
+          service:
+            name: mywebsitetwo-svc
+            port:
+              number: 8080
+      
