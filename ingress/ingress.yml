@@ -11,9 +11,11 @@ spec:
       paths:
         - path: /muna
           backend:
-            serviceName: mywebsiteone-svc
-            servicePort: 8080
+            service: 
+               name: mywebsiteone-svc
+               port: 8080
         - path: /abhi
           backend:
-            serviceName: mywebsitetwo-svc
-            servicePort: 8080
+            service: 
+               name: mywebsitetwo-svc
+               port: 8080
