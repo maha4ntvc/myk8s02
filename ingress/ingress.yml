@@ -10,11 +10,13 @@ spec:
   - http:
       paths:
         - path: /muna
+          pathType: Prefix
           backend:
             service: 
                name: mywebsiteone-svc
                port: 8080
         - path: /abhi
+          pathType: Prefix
           backend:
             service: 
                name: mywebsitetwo-svc
